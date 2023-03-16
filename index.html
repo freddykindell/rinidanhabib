@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="theme-color" content="#BC8887" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +9,8 @@
     <title>Undangan Pernikahan Rini & Habib</title>
 
     <meta property="og:title" content="Undangan Pernikahan Rini & Habib - Sabtu, 27 Mei 2023">
-    <meta property="og:description" content="Undangan Pernikahan Rini & Habib - Sabtu, 27 Mei 2023 di Gang Mulia I No. 2">
+    <meta property="og:description"
+        content="Undangan Pernikahan Rini & Habib - Sabtu, 27 Mei 2023 di Gang Mulia I No. 2">
     <meta property="og:locale" content="id_ID" />
     <meta property="og:image" content="image/rinihabib-thumbnail">
     <meta property="og:url" content="https://freddykindell.github.io/rinidanhabib/">
@@ -18,10 +20,9 @@
     <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
     <link rel="stylesheet" type="text/css" href="css/menikah.css" />
     <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
-    <script
-      src="https://kit.fontawesome.com/2828f7885a.js"
-      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
-      crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/2828f7885a.js"
+        integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
@@ -29,571 +30,650 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
     <!-- Begin Script for Countdown -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-23064379-20');
+        gtag('config', 'UA-23064379-20');
     </script>
     <!-- Begin Script for Countdown -->
 
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
-      <div class="preloader">
-        <img src="image/favicon.png" alt="Flower" />
-      </div>
+        <div class="preloader">
+            <img src="image/favicon.png" alt="Flower" />
+        </div>
     </div>
     <!-- End Preloader-->
     <!-- Begin Header -->
     <div class="header-wrapper" id="home">
-      <!-- Begin Hero -->
-      <section class="hero is-large">
-        <!-- Begin Mobile Nav -->
-        <nav class="navbar is-transparent is-hidden-desktop">
-          <!-- Begin Burger Menu -->
-          <div class="navbar-brand is-fixed-top">
-            <div class="navbar-burger burger" data-target="mobile-nav">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-          <!-- End Burger Menu -->
-          <div id="mobile-nav" class="navbar-menu">
-            <div class="navbar-end">
-              <div class="navbar-item">
-                <a class="navbar-item" href="#Waktu">
-                  Waktu
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#lokasi">
-                  Lokasi
-                </a>
-              </div>
-              
-              <div class="navbar-item">
-                <a class="navbar-item" href="#tentang-sherly-daeng">
-                  Galeri Rini dan Habib
-                </a>
-              </div>
-              <div class="navbar-item">
-                <a class="navbar-item" href="#rsvp">
-                  RSVP
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <!-- End Mobile Nav -->
-        <!-- Begin Hero Content-->
-        <div class="hero-body">
-          <div class="container has-text-centered">
-            <h1 class="subtitle">Undangan Pernikahan</h1>
-            <h2 class="title">Rini & Habib</h2>
-            <h4 class="subtitle tempatwaktu">
-              
-                Sabtu, 27 Mei 2023
-                </br>
-                Rumah Kebaya Surti
-                </br>
-                Dumai
-              
-            </h4>
-          </div>
-          <!-- Start Countdown -->       
-          <div>
-            <ul id="hitungmundur" >
-              <li><span class="days">00</span><p class="days_text">Hari</p></li>
-              <li class="separator">:</li>
-              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
-              <li class="separator">:</li>
-              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
-              <li class="separator">:</li>
-              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
-            </ul>
-            <div class="spasi">
-            </div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-          
-              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
-              var harih = '05/27/2023 10:00:00';
+        <!-- Begin Hero -->
+        <section class="hero is-large">
+            <!-- Begin Mobile Nav -->
+            <nav class="navbar is-transparent is-hidden-desktop">
+                <!-- Begin Burger Menu -->
+                <div class="navbar-brand is-fixed-top">
+                    <div class="navbar-burger burger" data-target="mobile-nav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!-- End Burger Menu -->
+                <div id="mobile-nav" class="navbar-menu">
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#Waktu">
+                                Waktu
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#lokasi">
+                                Lokasi
+                            </a>
+                        </div>
 
-              $('#hitungmundur').countdown({
-                date: harih, // TODO Date format: 07/27/2017 17:00:00
-                offset: +7, // TODO Your Timezone Offset
-                day: 'Hari',
-                days: 'Hari'
-              }, function () {
-                alert('Done!');
-              });
-            </script>  
-          </div>
-          <!-- End Countdown -->
-        </div>
-        <!-- End Hero Content-->
-        <!-- Begin Hero Menu -->
-        <div class="hero-foot ">
-          <div class="hero-foot--wrapper">
-            <div class="columns">
-              <div class="column is-12 hero-menu-desktop has-text-centered">
-                <ul>
-                  <li class="is-active">
-                    <a href="#home">Home</a>
-                  </li>
-                  <li>
-                    <a href="#Waktu">Waktu</a>
-                  </li>
-                  <li>
-                    <a href="#lokasi">Lokasi</a>
-                  </li>
-                  <li>
-                    <a href="#tentang-sherly-daeng">Galeri Rini & Habib</a>
-                  </li>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#tentang-sherly-daeng">
+                                Galeri Rini dan Habib
+                            </a>
+                        </div>
+                        <div class="navbar-item">
+                            <a class="navbar-item" href="#rsvp">
+                                RSVP
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <!-- End Mobile Nav -->
+            <!-- Begin Hero Content-->
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="subtitle">Undangan Pernikahan</h1>
+                    <h2 class="title">Rini & Habib</h2>
+                    <h4 class="subtitle tempatwaktu">
 
-                  <li>
-                    <a href="#rsvp">RSVP</a>
-                  </li>
-                </ul>
-              </div>
+                        Sabtu, 27 Mei 2023
+                        </br>
+                        Rumah Kebaya Surti
+                        </br>
+                        Dumai
+
+                    </h4>
+                </div>
+                <!-- Start Countdown -->
+                <div>
+                    <ul id="hitungmundur">
+                        <li><span class="days">00</span>
+                            <p class="days_text">Hari</p>
+                        </li>
+                        <li class="separator">:</li>
+                        <li><span class="hours">00</span>
+                            <p class="hours_text">Jam</p>
+                        </li>
+                        <li class="separator">:</li>
+                        <li><span class="minutes">00</span>
+                            <p class="minutes_text">Menit</p>
+                        </li>
+                        <li class="separator">:</li>
+                        <li><span class="seconds">00</span>
+                            <p class="seconds_text">Detik</p>
+                        </li>
+                    </ul>
+                    <div class="spasi">
+                    </div>
+                    <script type="text/javascript">
+                        var now = new Date();
+                        var day = now.getDate();
+                        var month = now.getMonth() + 1;
+                        var year = now.getFullYear() + 1;
+
+                        var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+                        var harih = '05/27/2023 10:00:00';
+
+                        $('#hitungmundur').countdown({
+                            date: harih, // TODO Date format: 07/27/2017 17:00:00
+                            offset: +7, // TODO Your Timezone Offset
+                            day: 'Hari',
+                            days: 'Hari'
+                        }, function () {
+                            alert('Done!');
+                        });
+                    </script>
+                </div>
+                <!-- End Countdown -->
             </div>
-          </div>
-        </div>
-        <!-- End Hero Menu -->
-      </section>
-      <!-- End Hero -->
+            <!-- End Hero Content-->
+            <!-- Begin Hero Menu -->
+            <div class="hero-foot ">
+                <div class="hero-foot--wrapper">
+                    <div class="columns">
+                        <div class="column is-12 hero-menu-desktop has-text-centered">
+                            <ul>
+                                <li class="is-active">
+                                    <a href="#home">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#Waktu">Waktu</a>
+                                </li>
+                                <li>
+                                    <a href="#lokasi">Lokasi</a>
+                                </li>
+                                <li>
+                                    <a href="#tentang-sherly-daeng">Galeri Rini & Habib</a>
+                                </li>
+
+                                <li>
+                                    <a href="#rsvp">RSVP</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Hero Menu -->
+        </section>
+        <!-- End Hero -->
     </div>
     <!-- End Header -->
 
     <!-- Begin Main Content -->
     <div class="main-content">
-    <!-- Begin regular-section-->
-     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
-        
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
-        </div>
+        <!-- Begin regular-section-->
+        <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
+            id="regular-section">
 
-        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
-          Assalamu'alaikum Warahmatullahi Wabarakatuh.
-          <br />
-          Dengan memohon rahmat dan ridha Allah swt, 
-          <br />
-          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
-        </p>
-
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <div class="nama-lengkap" >
-            Rini Susanti, S. Hum
-          </div>
-          <div class="ampersand">&</div>
-          <div class="nama-lengkap">
-          Hermansyah Habibullah, S.T
-          </div>
-           
-        </div>
-        <span class="space40px"></span>
-        <div data-aos="fade-up" data-aos-easing="linear">
-          <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <span class="space40px"></span>
-        <span class="space40px"></span>
-      </section>
-      <!-- End regular-section-->    
-      
-      <!-- Begin Waktu Section -->
-      <section class="section-dark" id="Waktu">
-        <div class="container">
-
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Waktu</h1>
-          </div>
-          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
-            <div
-              class="column is-4 has-vertically-aligned-content">
-            
-              <p class="is-larger has-text-centered">
-                  <div class="waktu tanggal-hari has-text-centered">Sabtu</div> 
-                  <div class="waktu tanggal-angka has-text-centered">27</div>
-                  <div class="waktu tanggal-bulan has-text-centered">Mei 2023</div>
-              </p>
-            
-            </div>
-            <div class="column is-4 has-vertically-aligned-content">
-            
-              <p class="waktu is-larger has-text-centered">
-                Akad Nikah:
-                <br>
-                <strong>08.00 WIB</strong>
-              </p>
-            
-            </div>
-
-            <div class="column is-4 has-vertically-aligned-content">
-              
-              <h1 class="waktu is-larger has-text-centered">
-                Resepsi:
-                <br>
-                <strong>11.00 s/d Selesai</strong>
-              </h1>
-              
-              
-            </div>
-
-          </div>
-        </div>
-        <div class="space40px"></div>
-        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MXFzMW1yZzQxZnJtOW9rMWVwZ29hN2s4aXEgbXlydW5ic3RrQG0&tmsrc=myrunbstk%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
-            <i class="far fa-calendar-plus"></i>
-            &nbsp;&nbsp;Remind Me
-          </a>
-        </div>
-      </section>
-      <!-- End Waktu Content -->
-
-      <!-- Begin Lokasi Section -->
-      <section class="section-darker" id="lokasi" >
-        <div class="container">
-          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
-            <h1 class="title has-text-centered section-title">Lokasi</h1>
-            <p class="tempat is-larger has-text-centered">
-              <strong>Rumah Kebaya Surti</strong>
-              <br>
-              Jl. Ombak Gg. Mulia 1 No. 2 
-              <br>
-              Dumai - Riau
-              <br>
-            </p>
-          </div>
-          <div class="space20px"></div>
-          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-            <a href="https://www.google.com/maps/place/1.669493,+101.429757/@1.6694516,101.4297796,21z/data=!4m4!3m3!8m2!3d1.6694928!4d101.4297568" class="button btn-cta" target="_blank" data-aos="zoom-in">
-              <i class="far fa-directions"></i>
-              &nbsp;&nbsp;Buka Maps
-            </a>
-          </div>
-        </div>
-      </section>
-      <!-- End Lokasi Content -->
-
-      <!-- Begin Tentang Sherly and Daeng -->
-      <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
-        <div class="container">
-          <div class="columns is-multiline">  
-          <div class="column has-text-centered is-12 prolog">
-            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Galeri Rini dan Habib</h1>
-            
-
-          
-          <!-- IMAGES -->  
-           
-          <!-- IMAGES -->
-          <div class="space40px"></div>
             <div data-aos="fade-up" data-aos-easing="linear">
-              <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
-            </div> 
-            <div class="space40px"></div>
-            <div class="space40px"></div>
-
-          </div>
-        </div>
-      </section>
-      <!-- End Tentang Sherly dan Daeng -->
-
-      <!-- Begin RSVP Content -->
-      <section class="section-dark contact" id="rsvp">
-        <div class="container">
-          <div class="columns is-multiline">          
-            <div class="column is-12 prolog">
-              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Konfirmasi Kehadiran</h1>
+                <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
             </div>
-            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-              <p class="h2 subtitle">
-                Merupakan suatu kehormatan dan kebahagiaan bagi kami,
-                <br>
-                apabila Bapak/Ibu/Saudara/Saudari
-                <br>
-                berkenan hadir memberikan doa restu.
-                <br><br>
-                Jika bisa hadir kami tunggu konfirmasinya, 
-                <br><br>
-                <i>Informasi:<br>Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan suhu tubuh.</i>
-                <br>
-                <br>
-                Jika tidak memungkinkan untuk hadir di pernikahan kami, tidak mengapa,
-                <br> 
-                semoga bisa berjumpa di lain kesempatan
-                <br>
-                <br>
-                Stay safe & jaga kesehatan 😁
+
+            <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+                Assalamu'alaikum Warahmatullahi Wabarakatuh.
+                <br />
+                Dengan memohon rahmat dan ridha Allah swt,
+                <br />
+                kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara pernikahan kami
             </p>
-            
-            <a href="https://api.whatsapp.com/send?phone=6285263538010&text=Halo%20Rini,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Rini
-            </a>
-            
-            <a href="https://api.whatsapp.com/send?phone=6282384467436&text=Halo%20Habib,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data=" class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-                <i class="fab fa-whatsapp"></i>
-                &nbsp;&nbsp;Kabari Habib
-            </a >
+
+            <span class="space40px"></span>
+            <span class="space40px"></span>
+
+            <div data-aos="fade-up" data-aos-easing="linear">
+                <div class="nama-lengkap">
+                    Rini Susanti, S. Hum
+                </div>
+                <div class="ampersand">&</div>
+                <div class="nama-lengkap">
+                    Hermansyah Habibullah, S.T
+                </div>
+
+            </div>
+            <span class="space40px"></span>
             <div data-aos="fade-up" data-aos-easing="linear">
                 <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
             </div>
-            <div class="elementor-element elementor-element-23794221 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-aos="fade-up" data-aos-easing="linear" data-id="23794221" data-element_type="widget" data-widget_type="heading.default">
-		<div class="elementor-widget-container">
-            <p class="h2 subtitle">
-                Bagi yang berhalangan hadir, kami tambahkan fitur di bawah ini
-            <br><br>
-            </p>
-            </div>
-        </div>
-        <div class="ignielSpoiler" data-aos="fade-up" data-aos-easing="linear">
-            <div class="tombol btn-cta" tabindex="0"></div>
-            <div class="isi">
-				
-        <section class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-1ff83ae0 elementor-section-full_width sec_angpao elementor-section-height-default elementor-section-height-default wdp-sticky-section-no" data-id="1ff83ae0" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1992d070 animated-slow wdp-sticky-section-no elementor-invisible" data-id="1992d070" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;bounceInLeft&quot;,&quot;animation_mobile&quot;:&quot;bounceInLeft&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-58bb0376 wdp-sticky-section-no elementor-widget elementor-widget-image" data-id="58bb0376" data-element_type="widget" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-                    <br>
-				<img decoding="async" width="182" height="60" src="image/Bank-BCA-Logo-resized.png" class="attachment-large size-large" alt="" loading="lazy" />
-            </div>
-				</div>
-            <div class="elementor-element elementor-element-1f5fa137 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="1f5fa137" data-element_type="widget" data-widget_type="heading.default">
-            <div class="elementor-widget-container">
-            <p class="h2 subtitle">
-                2300495748
-                <br>
-                Rini Susanti
-            </p>
-            </div>
-			</div>
-				<div class="elementor-element elementor-element-51691dc8 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-copy-text" data-id="51691dc8" data-element_type="widget" data-widget_type="weddingpress-copy-text.default">
-				<div class="elementor-widget-container">
-					
-		<div class="elementor-image img"></div>
+            <span class="space40px"></span>
+            <span class="space40px"></span>
+        </section>
+        <!-- End regular-section-->
 
-		<div class="head-title"></div>
-		<div class="elementor-button-wrapper">
-            <div class="copy-content spancontent" style="display: none;">2300495748</div>
-				
-			<a style="cursor:pointer;" onclick="copyText(this)" data-message="Data berhasil disalin" class="button btn-cta-angpao">
-		
-        <div class="button btn-cta-angpao">        
-		<div class="elementor-button-content-wrapper">
-            <span class="elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="far fa-copy"></i></span>
-                    <span class="elementor-button-text">Salin Nomor Rekening</span>
-		</div>
-    </div>
-		</a>
-			
-		</div>
-        
-		<style type="text/css">
-			.spancontent {
-				padding-bottom: 20px;
-			}
-			.copy-content {
-				color: #6EC1E4;
-				text-align: center;
-			}
-			.head-title {
-				color: #6EC1E4;
-				text-align: center;
-			}
-		</style>
+        <!-- Begin Waktu Section -->
+        <section class="section-dark" id="Waktu">
+            <div class="container">
 
-		<script>
-		function copyText(el) {
-		    var content = jQuery(el).siblings('div.copy-content').html()
-		    var temp = jQuery("<textarea>");
-		    jQuery("body").append(temp);
-		    temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
-		    document.execCommand("copy");
-		    temp.remove();
-		    var text = jQuery(el).html()
-		    jQuery(el).html(jQuery(el).data('message'))
-		    var counter = 0;
-		    var interval = setInterval(function() {
-		        counter++;
-		        if (counter == 1) {
-		            jQuery(el).html(text)
-		        }
-		    }, 500);
-		}
-
-		</script>
-
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-675dceb8 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp" data-id="675dceb8" data-element_type="widget" data-widget_type="weddingpress-whatsapp.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-                        <div class="button btn-cta-angpao">  
-			<a href="https://api.whatsapp.com/send?phone=6285263538010" class="elementor-button-link elementor-button elementor-size-sm">
-						<span class="elementor-button-content-wrapper elementor-button-content-wrapper">
-						<span class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
-				<i aria-hidden="true" class="far fa-paper-plane"></i></span>
-						<span class="elementor-button-text">Konfirmasi Whatsapp</span>
-		</span>
-					</a>
-		</div> </div>
-				</div>
-				</div>
+                <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                    <h1 class="title has-text-centered section-title">Waktu</h1>
                 </div>
-		</div>
-    </div>
-		</section>
-        <br>
-				<section class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-294d0a20 elementor-section-full_width sec_gift elementor-section-height-default elementor-section-height-default wdp-sticky-section-no" data-id="294d0a20" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7c51e2ae animated-slow wdp-sticky-section-no elementor-invisible" data-id="7c51e2ae" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;bounceInLeft&quot;,&quot;animation_mobile&quot;:&quot;bounceInLeft&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-25d19b46 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="25d19b46" data-element_type="widget" data-widget_type="heading.default">
-                    <div class="elementor-widget-container">
-                        <p class="elementor-heading-title elementor-size-default">
-                        <br> <h1 class="title has-text-centered section-title">Send Gift</h1>
+                <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <p class="is-larger has-text-centered">
+                        <div class="waktu tanggal-hari has-text-centered">Sabtu</div>
+                        <div class="waktu tanggal-angka has-text-centered">27</div>
+                        <div class="waktu tanggal-bulan has-text-centered">Mei 2023</div>
                         </p>
+
+                    </div>
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <p class="waktu is-larger has-text-centered">
+                            Akad Nikah:
+                            <br>
+                            <strong>08.00 WIB</strong>
+                        </p>
+
+                    </div>
+
+                    <div class="column is-4 has-vertically-aligned-content">
+
+                        <h1 class="waktu is-larger has-text-centered">
+                            Resepsi:
+                            <br>
+                            <strong>11.00 s/d Selesai</strong>
+                        </h1>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="space40px"></div>
+            <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MXFzMW1yZzQxZnJtOW9rMWVwZ29hN2s4aXEgbXlydW5ic3RrQG0&tmsrc=myrunbstk%40gmail.com"
+                    target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank"
+                    data-aos="zoom-in">
+                    <i class="far fa-calendar-plus"></i>
+                    &nbsp;&nbsp;Remind Me
+                </a>
+            </div>
+        </section>
+        <!-- End Waktu Content -->
+
+        <!-- Begin Lokasi Section -->
+        <section class="section-darker" id="lokasi">
+            <div class="container">
+                <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+                    <h1 class="title has-text-centered section-title">Lokasi</h1>
+                    <p class="tempat is-larger has-text-centered">
+                        <strong>Rumah Kebaya Surti</strong>
+                        <br>
+                        Jl. Ombak Gg. Mulia 1 No. 2
+                        <br>
+                        Dumai - Riau
+                        <br>
+                    </p>
+                </div>
+                <div class="space20px"></div>
+                <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                    <a href="https://www.google.com/maps/place/1.669493,+101.429757/@1.6694516,101.4297796,21z/data=!4m4!3m3!8m2!3d1.6694928!4d101.4297568"
+                        class="button btn-cta" target="_blank" data-aos="zoom-in">
+                        <i class="far fa-directions"></i>
+                        &nbsp;&nbsp;Buka Maps
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- End Lokasi Content -->
+
+        <!-- Begin Tentang Sherly and Daeng -->
+        <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column has-text-centered is-12 prolog">
+                        <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">
+                            Galeri Rini dan Habib</h1>
+
+
+
+                        <!-- IMAGES -->
+
+                        <!-- IMAGES -->
+                        <div class="space40px"></div>
+                        <div data-aos="fade-up" data-aos-easing="linear">
+                            <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
+                        </div>
+                        <div class="space40px"></div>
+                        <div class="space40px"></div>
+
                     </div>
                 </div>
-				<section class="elementor-section elementor-inner-section elementor-element elementor-element-61f8c55b elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no" data-id="61f8c55b" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-78492049 wdp-sticky-section-no elementor-invisible" data-id="78492049" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;bounceIn&quot;,&quot;animation_mobile&quot;:&quot;bounceIn&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7a3a38f1 wdp-sticky-section-no elementor-widget elementor-widget-heading" data-id="7a3a38f1" data-element_type="widget" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<span class="elementor-heading-title elementor-size-default">
-                <p class="h2 subtitle">
-                    Jl. Ombak Gg. Mulia 1 No. 2
+        </section>
+        <!-- End Tentang Sherly dan Daeng -->
+
+        <!-- Begin RSVP Content -->
+        <section class="section-dark contact" id="rsvp">
+            <div class="columns is-multiline">
+                <div class="column is-12 prolog">
+                    <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">
+                        Konfirmasi Kehadiran</h1>
+                </div>
+                <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+                    <p class="h2 subtitle">
+                        Merupakan suatu kehormatan dan kebahagiaan bagi kami,
+                        <br>
+                        apabila Bapak/Ibu/Saudara/Saudari
+                        <br>
+                        berkenan hadir memberikan doa restu.
+                        <br><br>
+                        Jika bisa hadir kami tunggu konfirmasinya,
+                        <br><br>
+                        <i>Informasi:<br>Di meja penerima tamu akan kami sediakan hand sanitizer dan pemeriksaan
+                            suhu tubuh.</i>
+                        <br>
+                        <br>
+                        Jika tidak memungkinkan untuk hadir di pernikahan kami, tidak mengapa,
+                        <br>
+                        semoga bisa berjumpa di lain kesempatan
+                        <br>
+                        <br>
+                        Stay safe & jaga kesehatan 😁
+                    </p>
+
+                    <a href="https://api.whatsapp.com/send?phone=6285263538010&text=Halo%20Rini,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data="
+                        class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                        <i class="fab fa-whatsapp"></i>
+                        &nbsp;&nbsp;Kabari Rini
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=6282384467436&text=Halo%20Habib,%20saya%20akan%20datang%20di%20acara%20pernikahan&source=&data="
+                        class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
+                        <i class="fab fa-whatsapp"></i>
+                        &nbsp;&nbsp;Kabari Habib
+                    </a>
+                    <div data-aos="fade-up" data-aos-easing="linear">
+                        <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                    </div>
+                    <div class="elementor-element elementor-element-23794221 wdp-sticky-section-no elementor-widget elementor-widget-heading"
+                        data-aos="fade-up" data-aos-easing="linear" data-id="23794221" data-element_type="widget"
+                        data-widget_type="heading.default">
+                        <div class="elementor-widget-container">
+                            <p class="h2 subtitle">
+                                Bagi yang berhalangan hadir, kami tambahkan fitur di bawah ini
+                                <br><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <section
+                        class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-1ff83ae0 elementor-section-full_width sec_angpao elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
+                        data-id="1ff83ae0" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-1992d070 animated-slow wdp-sticky-section-no elementor-invisible"
+                                data-id="1992d070" data-element_type="column"
+                                data-settings="{&quot;animation&quot;:&quot;bounceInLeft&quot;,&quot;animation_mobile&quot;:&quot;bounceInLeft&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-58bb0376 wdp-sticky-section-no elementor-widget elementor-widget-image"
+                                        data-id="58bb0376" data-element_type="widget"
+                                        data-widget_type="image.default">
+                                        <div class="elementor-widget-container">
+                                            <br>
+                                            <img decoding="async" width="182" height="60"
+                                                src="image/Bank-BCA-Logo-resized.png"
+                                                class="attachment-large size-large" alt="" loading="lazy" />
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-1f5fa137 wdp-sticky-section-no elementor-widget elementor-widget-heading"
+                                        data-id="1f5fa137" data-element_type="widget"
+                                        data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="h2 subtitle">
+                                                2300495748
+                                                <br>
+                                                Rini Susanti
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-51691dc8 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-copy-text"
+                                        data-id="51691dc8" data-element_type="widget"
+                                        data-widget_type="weddingpress-copy-text.default">
+                                        <div class="elementor-widget-container">
+
+                                            <div class="elementor-image img"></div>
+
+                                            <div class="head-title"></div>
+                                            <div class="elementor-button-wrapper">
+                                                <div class="copy-content spancontent" style="display: none;">
+                                                    2300495748</div>
+
+                                                <a style="cursor:pointer;" onclick="copyText(this)"
+                                                    data-message="Data berhasil disalin"
+                                                    class="button btn-cta-angpao">
+
+                                                    <div class="button btn-cta-angpao">
+                                                        <div class="elementor-button-content-wrapper">
+                                                            <span
+                                                                class="elementor-button-icon elementor-align-icon-left">
+                                                                <i aria-hidden="true"
+                                                                    class="far fa-copy"></i></span>
+                                                            <span class="elementor-button-text">Salin Nomor
+                                                                Rekening</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+
+                                            </div>
+
+                                            <style type="text/css">
+                                                .spancontent {
+                                                    padding-bottom: 20px;
+                                                }
+
+                                                .copy-content {
+                                                    color: #6EC1E4;
+                                                    text-align: center;
+                                                }
+
+                                                .head-title {
+                                                    color: #6EC1E4;
+                                                    text-align: center;
+                                                }
+                                            </style>
+
+                                            <script>
+                                                function copyText(el) {
+                                                    var content = jQuery(el).siblings('div.copy-content').html()
+                                                    var temp = jQuery("<textarea>");
+                                                    jQuery("body").append(temp);
+                                                    temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
+                                                    document.execCommand("copy");
+                                                    temp.remove();
+                                                    var text = jQuery(el).html()
+                                                    jQuery(el).html(jQuery(el).data('message'))
+                                                    var counter = 0;
+                                                    var interval = setInterval(function () {
+                                                        counter++;
+                                                        if (counter == 1) {
+                                                            jQuery(el).html(text)
+                                                        }
+                                                    }, 500);
+                                                }
+
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-675dceb8 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp"
+                                        data-id="675dceb8" data-element_type="widget"
+                                        data-widget_type="weddingpress-whatsapp.default">
+                                        <div class="elementor-widget-container">
+                                            <div class="elementor-button-wrapper">
+                                                <div class="button btn-cta-angpao">
+                                                    <a href="https://api.whatsapp.com/send?phone=6285263538010"
+                                                        class="elementor-button-link elementor-button elementor-size-sm">
+                                                        <span
+                                                            class="elementor-button-content-wrapper elementor-button-content-wrapper">
+                                                            <span
+                                                                class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
+                                                                <i aria-hidden="true"
+                                                                    class="far fa-paper-plane"></i></span>
+                                                            <span class="elementor-button-text">&nbsp; Konfirmasi
+                                                                Whatsapp</span>
+                                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                     <br>
-                    
-                    Recipient: Rini Susanti</span>		</div>
-                </p>
+                    <section
+                        class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-294d0a20 elementor-section-full_width sec_gift elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
+                        data-id="294d0a20" data-element_type="section">
+                        <div class="elementor-container elementor-column-gap-default">
+                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-7c51e2ae animated-slow wdp-sticky-section-no elementor-invisible"
+                                data-id="7c51e2ae" data-element_type="column"
+                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;bounceInLeft&quot;,&quot;animation_mobile&quot;:&quot;bounceInLeft&quot;}">
+                                <div class="elementor-widget-wrap elementor-element-populated">
+                                    <div class="elementor-element elementor-element-25d19b46 wdp-sticky-section-no elementor-widget elementor-widget-heading"
+                                        data-id="25d19b46" data-element_type="widget"
+                                        data-widget_type="heading.default">
+                                        <div class="elementor-widget-container">
+                                            <p class="elementor-heading-title elementor-size-default">
+                                                <br>
+                                            <h1 class="title has-text-centered section-title">Send Gift</h1>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-61f8c55b elementor-section-boxed elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
+                                        data-id="61f8c55b" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-78492049 wdp-sticky-section-no elementor-invisible"
+                                                data-id="78492049" data-element_type="column"
+                                                data-settings="{&quot;animation&quot;:&quot;bounceIn&quot;,&quot;animation_mobile&quot;:&quot;bounceIn&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-7a3a38f1 wdp-sticky-section-no elementor-widget elementor-widget-heading"
+                                                        data-id="7a3a38f1" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <span
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                <p class="h2 subtitle">
+                                                                    Jl. Ombak Gg. Mulia 1 No. 2
+                                                                    <br>
 
-				</div>
-				<div class="elementor-element elementor-element-4a927544 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-copy-text" data-id="4a927544" data-element_type="widget" data-widget_type="weddingpress-copy-text.default">
-				<div class="elementor-widget-container">
-					
-		<div class="elementor-image img"></div>
+                                                                    Recipient: Rini Susanti
+                                                            </span>
+                                                        </div>
+                                                        </p>
 
-		<div class="head-title"></div>
-		<div class="elementor-button-wrapper">
-						<div class="copy-content spancontent" style="display: none;">Jl. Ombak Gg. Mulia 1 No. 2</div>
-				
-			<a style="cursor:pointer;" onclick="copyText(this)" data-message="Data berhasil disalin" class="button btn-cta-angpao">
-				
-		<div class="elementor-button-content-wrapper">
-						<span class="elementor-button-icon elementor-align-icon-left">
-                            <div class="button btn-cta-angpao"><i aria-hidden="true" class="far fa-copy"> </i>			</span>
-						<span class="elementor-button-text">
-                            Salin Alamat</div></span>
-		</div>
-					</a>
-			
-		</div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-4a927544 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-copy-text"
+                                                        data-id="4a927544" data-element_type="widget"
+                                                        data-widget_type="weddingpress-copy-text.default">
+                                                        <div class="elementor-widget-container">
 
-		<style type="text/css">
-			.spancontent {
-				padding-bottom: 20px;
-			}
-			.copy-content {
-				color: #6EC1E4;
-				text-align: center;
-			}
-			.head-title {
-				color: #6EC1E4;
-				text-align: center;
-			}
-		</style>
+                                                            <div class="elementor-image img"></div>
 
-		<script>
-		function copyText(el) {
-		    var content = jQuery(el).siblings('div.copy-content').html()
-		    var temp = jQuery("<textarea>");
-		    jQuery("body").append(temp);
-		    temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
-		    document.execCommand("copy");
-		    temp.remove();
-		    var text = jQuery(el).html()
-		    jQuery(el).html(jQuery(el).data('message'))
-		    var counter = 0;
-		    var interval = setInterval(function() {
-		        counter++;
-		        if (counter == 1) {
-		            jQuery(el).html(text)
-		        }
-		    }, 500);
-		}
+                                                            <div class="head-title"></div>
+                                                            <div class="elementor-button-wrapper">
+                                                                <div class="copy-content spancontent"
+                                                                    style="display: none;">Jl. Ombak Gg. Mulia 1 No.
+                                                                    2</div>
 
-		</script>
+                                                                <a style="cursor:pointer;" onclick="copyText(this)"
+                                                                    data-message="Data berhasil disalin"
+                                                                    class="button btn-cta-angpao">
 
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-62d3a567 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp" data-id="62d3a567" data-element_type="widget" data-widget_type="weddingpress-whatsapp.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-button-wrapper">
-			<a href="https://api.whatsapp.com/send?phone=6285263538010" class="elementor-button-link elementor-button elementor-size-sm">
-						<span class="elementor-button-content-wrapper elementor-button-content-wrapper">
-						<span class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
-                            <div class="button btn-cta-angpao"><i aria-hidden="true" class="far fa-paper-plane"> </i></span>
-						<span class="elementor-button-text"> Konfirmasi Whatsapp</div></span>
-		</span>
-					</a>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-					</div>
-		</div>
-							</div>
-		</section>
-            </p>
-        </div></div>
-        <center>
-            <div class="space40px"></div>
-            <div data-aos="fade-up" data-aos-easing="linear">
-                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+                                                                    <div class="elementor-button-content-wrapper">
+                                                                        <span
+                                                                            class="elementor-button-icon elementor-align-icon-left">
+                                                                            <div class="button btn-cta-angpao"><i
+                                                                                    aria-hidden="true"
+                                                                                    class="far fa-copy"> </i>
+                                                                        </span>
+                                                                        <span class="elementor-button-text">
+                                                                            Salin Alamat
+                                                                    </div></span>
+                                                            </div>
+                                                            </a>
+
+                                                        </div>
+
+                                                        <style type="text/css">
+                                                            .spancontent {
+                                                                padding-bottom: 20px;
+                                                            }
+
+                                                            .copy-content {
+                                                                color: #6EC1E4;
+                                                                text-align: center;
+                                                            }
+
+                                                            .head-title {
+                                                                color: #6EC1E4;
+                                                                text-align: center;
+                                                            }
+                                                        </style>
+
+                                                        <script>
+                                                            function copyText(el) {
+                                                                var content = jQuery(el).siblings('div.copy-content').html()
+                                                                var temp = jQuery("<textarea>");
+                                                                jQuery("body").append(temp);
+                                                                temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
+                                                                document.execCommand("copy");
+                                                                temp.remove();
+                                                                var text = jQuery(el).html()
+                                                                jQuery(el).html(jQuery(el).data('message'))
+                                                                var counter = 0;
+                                                                var interval = setInterval(function () {
+                                                                    counter++;
+                                                                    if (counter == 1) {
+                                                                        jQuery(el).html(text)
+                                                                    }
+                                                                }, 500);
+                                                            }
+
+                                                        </script>
+
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-62d3a567 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp"
+                                                    data-id="62d3a567" data-element_type="widget"
+                                                    data-widget_type="weddingpress-whatsapp.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="elementor-button-wrapper">
+                                                            <a href="https://api.whatsapp.com/send?phone=6285263538010"
+                                                                class="elementor-button-link elementor-button elementor-size-sm">
+                                                                <span
+                                                                    class="elementor-button-content-wrapper elementor-button-content-wrapper">
+                                                                    <span
+                                                                        class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
+                                                                        <div class="button btn-cta-angpao"><i
+                                                                                aria-hidden="true"
+                                                                                class="far fa-paper-plane"> </i>
+                                                                    </span>
+                                                                    <span class="elementor-button-text">&nbsp;
+                                                                        Konfirmasi Whatsapp
+                                                        </div></span>
+                                                        </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                    </section>
+                </div>
             </div>
-            <div class="space40px"></div>
-            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-                Kami yang berbahagia,
-                <br>
-                <a class="instagram" href="https://instagram.com/wadever34" target="_blank" alt="Instagram Rini">
+        </section>
+    </div>
+    </div>
+    </div>
+    </section>
+    </section>
+    <center>
+        <div class="space40px"></div>
+        <div data-aos="fade-up" data-aos-easing="linear">
+            <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+        </div>
+        <div class="space40px"></div>
+        <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+            Kami yang berbahagia,
+            <br>
+            <a class="instagram" href="https://instagram.com/wadever34" target="_blank" alt="Instagram Rini">
                 <i class="fab fa-instagram"></i> @wadever34
-                </a>
-                &nbsp
-                <a class="instagram" href="https://instagram.com/cocohelm" target="_blank" alt="Instagram Habib">
+            </a>
+            &nbsp
+            <a class="instagram" href="https://instagram.com/cocohelm" target="_blank" alt="Instagram Habib">
                 <i class="fab fa-instagram"></i> @cocohelm
-                </a>
-            </p>
-            </div>
+            </a>
+        </p>
         </div>
         </div>
-        </center>
+        </div>
+    </center>
     </section>
     <!-- End RSVP Content -->
     </div>
@@ -601,17 +681,17 @@
 
     <!-- Begin Footer -->
     <div class="footer">
-    <div class="container">
-        <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
-        <p class="has-vertically-align">2020 &copy Daeng Muhammad Feisal</p><br>
-        </a>
-        <a href="https://bulma.io" class="has-vertically-align">
-        <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
-        </a>
-        <a href="https://www.netlify.com">
-        <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify"/>
-        </a>
-    </div>
+        <div class="container">
+            <a href="https://github.com/daengdoang/daeng-sherly-menikah" class="has-vertically-align">
+                <p class="has-vertically-align">2020 &copy Daeng Muhammad Feisal</p><br>
+            </a>
+            <a href="https://bulma.io" class="has-vertically-align">
+                <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+            </a>
+            <a href="https://www.netlify.com">
+                <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploy with Netlify" />
+            </a>
+        </div>
     </div>
     <!-- End Footer -->
 
@@ -621,10 +701,12 @@
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <script>
-    AOS.init({
-        easing: "ease-out",
-        duration: 800,
-    });
+        AOS.init({
+            easing: "ease-out",
+            duration: 800,
+        });
     </script>
+
 </body>
+
 </html>

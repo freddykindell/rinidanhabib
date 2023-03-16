@@ -524,12 +524,12 @@ body.preloader-site {
 }
 
 .btn-cta-angpao {
-  background-color: #8a8a8a;
+  background-color: #b78e8e;
   width:  250px;
   height: 35px;
   color: white;
   font-size: 1.2rem;
-  border: 2px solid #8a8a8a;
+  border: 2px solid #b18d8d;
   border-radius: 10px;
   align-items: center;
   margin: 1rem;
@@ -675,36 +675,6 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
-}
-
-/* Spoiler Box Pure CSS by IGNIEL.COM */
-.ignielSpoiler {
-  display:block; margin: 0px; border:0px solid; padding:0px; border-radius:5px; -moz-border-radius:3px;
-}
-.ignielSpoiler .tombol {
-  color:#fff; /* Warna tulisan di tombol */
-  display:inline-block; cursor:pointer; font:light 600 'Raleway', sans-serif; padding:0px; border:none; outline:none; border-radius:3px; -moz-border-radius:3px;
-  height: 50px;
-  width: 250px;
-  font-size: 24px;
-  text-transform: uppercase;
-  align-items: center;
-}
-.ignielSpoiler .tombol:focus {
-  pointer-events:none;
-}
-.ignielSpoiler .tombol:before {
-  content:'Angpao and Gifts'; /* Tulisan untuk membuka tombol */
-}
-.ignielSpoiler .tombol:focus::before {
-  content:'Angpao and Gifts'; /* Tulisan untuk menutup tombol */
-}
-.ignielSpoiler .isi {
-  background:#F4E2E2; /* Warna background isi spoiler */
-  pointer-events:auto; visibility:hidden; opacity:0; height:0px; transition:all .5s ease;
-}
-.ignielSpoiler .tombol:focus + .isi {
-  visibility:visible; opacity:1; height:auto; margin:10px 0px 5px; padding:10px 15px; transition:all .5s ease;
 }
 
 .solidbox {
