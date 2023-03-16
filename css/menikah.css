@@ -511,6 +511,30 @@ body.preloader-site {
   margin: 1rem;
 }
 
+.btn-cta-small {
+  background-color: #8a8a8a;
+  width:  210px;
+  height: 35px;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid #8a8a8a;
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn-cta-angpao {
+  background-color: #8a8a8a;
+  width:  250px;
+  height: 35px;
+  color: white;
+  font-size: 1.2rem;
+  border: 2px solid #8a8a8a;
+  border-radius: 10px;
+  align-items: center;
+  margin: 1rem;
+}
+
 .cashbac-logo-inline {
   width: 160px;
   vertical-align: middle;
