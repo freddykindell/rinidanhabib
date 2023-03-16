@@ -294,7 +294,7 @@ html {
   text-transform: uppercase;
   font-size: 1.5rem;
   letter-spacing: 0px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
 }
 
 .nama-lengkap {
@@ -675,4 +675,38 @@ body.preloader-site {
   vertical-align: middle;
   text-align: center;
   padding: 10px;
+}
+
+/* Spoiler Box Pure CSS by IGNIEL.COM */
+.ignielSpoiler {
+  display:block; margin: 0px; border:0px solid; padding:0px; border-radius:5px; -moz-border-radius:3px;
+}
+.ignielSpoiler .tombol {
+  color:#fff; /* Warna tulisan di tombol */
+  display:inline-block; cursor:pointer; font:light 600 'Raleway', sans-serif; padding:0px; border:none; outline:none; border-radius:3px; -moz-border-radius:3px;
+  height: 50px;
+  width: 250px;
+  font-size: 24px;
+  text-transform: uppercase;
+  align-items: center;
+}
+.ignielSpoiler .tombol:focus {
+  pointer-events:none;
+}
+.ignielSpoiler .tombol:before {
+  content:'Angpao and Gifts'; /* Tulisan untuk membuka tombol */
+}
+.ignielSpoiler .tombol:focus::before {
+  content:'Angpao and Gifts'; /* Tulisan untuk menutup tombol */
+}
+.ignielSpoiler .isi {
+  background:#F4E2E2; /* Warna background isi spoiler */
+  pointer-events:auto; visibility:hidden; opacity:0; height:0px; transition:all .5s ease;
+}
+.ignielSpoiler .tombol:focus + .isi {
+  visibility:visible; opacity:1; height:auto; margin:10px 0px 5px; padding:10px 15px; transition:all .5s ease;
+}
+
+.solidbox {
+  border: 2px solid #EDD2D1;
 }
