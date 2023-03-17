@@ -1,7 +1,12 @@
-# Wedding Landing Page - Daeng Sherly Menikah
+# Wedding Landing Page
 
+Menggunakan template dari Daeng Sherly Menikah
+seperti thumbnail dibawah ini,
 ![Thumbnail](/image/thumbnail-web-sherly-daeng-menikah.png)
 
+digunakan untuk landing page pernikahan Rini & Habib
+lalu disesuaikan menjadi seperti ini,
+- check result at: https://freddykindell.github.io/rinidanhabib/
 
 # Section/Feature
 - Main Info
@@ -27,7 +32,5 @@
 - Rouge Script (Google Font)
 - Raleway (Google Font)
 
-
 # Credits
-
 - Floral vector created by BiZkettE1 - www.freepik.com (https://www.freepik.com/free-photos-vectors/background)
