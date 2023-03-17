@@ -693,4 +693,20 @@ body.preloader-site {
 
 .solidbox {
   border: 2px solid #EDD2D1;
+  position: relative; 
+}
+
+.alert-box {
+	padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px; 
+}
+
+.success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+  display: none;
+  position: absolute; 
 }

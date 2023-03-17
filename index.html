@@ -26,6 +26,7 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
+    <link rel='stylesheet' id='elementor-icons-css' href='https://hy.galipatstory2.com/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.15.0' type='text/css' media='all' />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
     <!-- Begin Script for Countdown -->
@@ -289,7 +290,7 @@
                         <br>
                     </p>
                 </div>
-                <div class="space20px"></div>
+                <div class="space24px"></div>
                 <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
                     <a href="https://www.google.com/maps/place/1.669493,+101.429757/@1.6694516,101.4297796,21z/data=!4m4!3m3!8m2!3d1.6694928!4d101.4297568"
                         class="button btn-cta" target="_blank" data-aos="zoom-in">
@@ -301,22 +302,20 @@
         </section>
         <!-- End Lokasi Content -->
 
-        <!-- Begin Tentang Sherly and Daeng -->
         <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column has-text-centered is-12 prolog">
                         <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">
                             Galeri Rini dan Habib</h1>
-
-
-
                         <!-- IMAGES -->
-
+                        <img src="image/rini/3.png" style="width:200px;height:200px;">
+                        <img src="image/rini/4.png" style="width:200px;height:200px;">
+                        <br>
+                        <img src="image/rini/1.png" style="width:200px;height:200px;">
+                        <img src="image/rini/2.png" style="width:200px;height:200px;">
                         <!-- IMAGES -->
-                        <div class="space40px"></div>
                         <div data-aos="fade-up" data-aos-easing="linear">
-                            <img src="image/divider-leaves.png" class="divider has-vertically-align" alt="~~~">
                         </div>
                         <div class="space40px"></div>
                         <div class="space40px"></div>
@@ -366,6 +365,7 @@
                         <i class="fab fa-whatsapp"></i>
                         &nbsp;&nbsp;Kabari Habib
                     </a>
+                    <div class="space40px"></div>
                     <div data-aos="fade-up" data-aos-easing="linear">
                         <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
                     </div>
@@ -373,15 +373,26 @@
                         data-aos="fade-up" data-aos-easing="linear" data-id="23794221" data-element_type="widget"
                         data-widget_type="heading.default">
                         <div class="elementor-widget-container">
-                            <p class="h2 subtitle">
+                            <div class="space40px"></div>
+                            <p  data-aos="fade-up" data-aos-easing="linear" class="h2 subtitle">
                                 Bagi yang berhalangan hadir, kami tambahkan fitur di bawah ini
                                 <br><br>
                             </p>
                         </div>
                     </div>
-                    <button data-aos="fade-up" data-aos-easing="linear" style="cursor:pointer;" class="btn-cta-angpao" id="tampil" onclick="tampil();">Angpao dan Gift</button><br><br>
+                    
+                    <button data-aos="fade-up" data-aos-easing="linear" style="cursor:pointer;" class="btn-cta-angpao" id="tampil" onclick="tampil();">
+                        <span class="elementor-button-content-wrapper">
+                            <span class="elementor-button-icon elementor-align-icon-left">
+                                <i aria-hidden="true" class="fas fa-gift"></i>
+                            </span>
+                            <span class="elementor-button-text">Angpao & Gifts</span>
+                        </span>
+                    </span>
+                    </button>
+                    <br><br>
                     <div id="div1" style="display:none;">
-                    <section
+                    <section 
                         class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-1ff83ae0 elementor-section-full_width sec_angpao elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
                         data-id="1ff83ae0" data-element_type="section">
                         <div class="elementor-container elementor-column-gap-default">
@@ -422,24 +433,23 @@
                                                 <div class="copy-content spancontent" style="display: none;">>
                                                     2300495748</div>
 
-                                                <a style="cursor:pointer;" onclick="myFunction()"
+                                                <a id="success-btn" style="cursor:pointer;" onclick="myFunction()"
                                                     data-message="Data berhasil disalin"
                                                     class="button btn-cta-angpao">
-
                                                     <div class="button btn-cta-angpao">
                                                         <div class="elementor-button-content-wrapper">
                                                             <span
                                                                 class="elementor-button-icon elementor-align-icon-left">
                                                                 <i aria-hidden="true"
                                                                     class="far fa-copy"></i></span>
-                                                            <span class="elementor-button-text">
-                                                                Salin Nomor Rekening
-                                                            </span>
+                                                                    <span class="elementor-button-text">
+                                                                        Salin Nomor Rekening
+                                                                    </span>
                                                         </div>
+                                                            <div class="alert-box success">Nomor Rekening berhasil disalin</div>
                                                     </div>
                                                 </a>
                                             </div>
-
                                             <style type="text/css">
                                                 .spancontent {
                                                     padding-bottom: 20px;
@@ -462,6 +472,11 @@
                                                 // Copy the text inside the text field
                                                 navigator.clipboard.writeText(copyText);
                                                 }
+                                            </script>
+                                            <script>
+                                                $( "#success-btn" ).click(function() {
+                                                $( "div.success" ).fadeIn( 300 ).delay( 1500 ).fadeOut( 400 );
+                                                });
                                             </script>
 
                                         </div>
