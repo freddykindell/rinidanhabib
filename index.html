@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/2828f7885a.js"
         integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="js/jquery.coundown.js"></script>
     <link rel="icon" type="image/png" href="image/favicon.png" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -379,7 +379,8 @@
                             </p>
                         </div>
                     </div>
-
+                    <button data-aos="fade-up" data-aos-easing="linear" style="cursor:pointer;" class="btn-cta-angpao" id="tampil" onclick="tampil();">Angpao dan Gift</button><br><br>
+                    <div id="div1" style="display:none;">
                     <section
                         class="solidbox elementor-section elementor-inner-section elementor-element elementor-element-1ff83ae0 elementor-section-full_width sec_angpao elementor-section-height-default elementor-section-height-default wdp-sticky-section-no"
                         data-id="1ff83ae0" data-element_type="section">
@@ -418,10 +419,10 @@
 
                                             <div class="head-title"></div>
                                             <div class="elementor-button-wrapper">
-                                                <div class="copy-content spancontent" style="display: none;">
+                                                <div class="copy-content spancontent" style="display: none;">>
                                                     2300495748</div>
 
-                                                <a style="cursor:pointer;" onclick="copyText(this)"
+                                                <a style="cursor:pointer;" onclick="myFunction()"
                                                     data-message="Data berhasil disalin"
                                                     class="button btn-cta-angpao">
 
@@ -431,12 +432,12 @@
                                                                 class="elementor-button-icon elementor-align-icon-left">
                                                                 <i aria-hidden="true"
                                                                     class="far fa-copy"></i></span>
-                                                            <span class="elementor-button-text">Salin Nomor
-                                                                Rekening</span>
+                                                            <span class="elementor-button-text">
+                                                                Salin Nomor Rekening
+                                                            </span>
                                                         </div>
                                                     </div>
                                                 </a>
-
                                             </div>
 
                                             <style type="text/css">
@@ -454,52 +455,38 @@
                                                     text-align: center;
                                                 }
                                             </style>
-
                                             <script>
-                                                function copyText(el) {
-                                                    var content = jQuery(el).siblings('div.copy-content').html()
-                                                    var temp = jQuery("<textarea>");
-                                                    jQuery("body").append(temp);
-                                                    temp.val(content.replace(/<br ?\/?>/g, "\n")).select();
-                                                    document.execCommand("copy");
-                                                    temp.remove();
-                                                    var text = jQuery(el).html()
-                                                    jQuery(el).html(jQuery(el).data('message'))
-                                                    var counter = 0;
-                                                    var interval = setInterval(function () {
-                                                        counter++;
-                                                        if (counter == 1) {
-                                                            jQuery(el).html(text)
-                                                        }
-                                                    }, 500);
+                                                function myFunction() {
+                                                // Get the text field
+                                                var copyText = "2300495748";
+                                                // Copy the text inside the text field
+                                                navigator.clipboard.writeText(copyText);
                                                 }
-
                                             </script>
 
                                         </div>
                                     </div>
-                                    <div class="elementor-element elementor-element-675dceb8 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp"
-                                        data-id="675dceb8" data-element_type="widget"
-                                        data-widget_type="weddingpress-whatsapp.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="elementor-button-wrapper">
-                                                <div class="button btn-cta-angpao">
-                                                    <a href="https://api.whatsapp.com/send?phone=6285263538010"
-                                                        class="elementor-button-link elementor-button elementor-size-sm">
-                                                        <span
-                                                            class="elementor-button-content-wrapper elementor-button-content-wrapper">
+                                <div class="elementor-element elementor-element-62d3a567 elementor-align-center btn_angpao wdp-sticky-section-no elementor-widget elementor-widget-weddingpress-whatsapp"
+                                                data-id="62d3a567" data-element_type="widget"
+                                                data-widget_type="weddingpress-whatsapp.default">
+                                                <div class="elementor-widget-container">
+                                                    <div class="elementor-button-wrapper">
+                                                        <a href="https://api.whatsapp.com/send?phone=6285263538010"
+                                                            class="elementor-button-link elementor-button elementor-size-sm">
                                                             <span
-                                                                class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
-                                                                <i aria-hidden="true"
-                                                                    class="far fa-paper-plane"></i></span>
-                                                            <span class="elementor-button-text">&nbsp; Konfirmasi
-                                                                Whatsapp</span>
-                                                        </span>
+                                                                class="elementor-button-content-wrapper elementor-button-content-wrapper">
+                                                                <span
+                                                                    class="elementor-align-icon-left elementor-button-icon elementor-button-icon elementor-align-icon-left">
+                                                                    <div class="button btn-cta-angpao"><i
+                                                                            aria-hidden="true"
+                                                                            class="far fa-paper-plane"> </i>
+                                                                </span>
+                                                                <span class="elementor-button-text">&nbsp;Konfirmasi Whatsapp
+                                                    </div></span>
+                                                    </span>
                                                     </a>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -538,9 +525,8 @@
                                                             <span
                                                                 class="elementor-heading-title elementor-size-default">
                                                                 <p class="h2 subtitle">
-                                                                    Jl. Ombak Gg. Mulia 1 No. 2
+                                                                    Jl. Ombak Gg. Mulia 1 No. 2 - Dumai
                                                                     <br>
-
                                                                     Recipient: Rini Susanti
                                                             </span>
                                                         </div>
@@ -557,9 +543,7 @@
                                                             <div class="head-title"></div>
                                                             <div class="elementor-button-wrapper">
                                                                 <div class="copy-content spancontent"
-                                                                    style="display: none;">Jl. Ombak Gg. Mulia 1 No.
-                                                                    2</div>
-
+                                                                    style="display: none;">Jl. Ombak Gg. Mulia 1 No. 2 - Dumai</div>
                                                                 <a style="cursor:pointer;" onclick="copyText(this)"
                                                                     data-message="Data berhasil disalin"
                                                                     class="button btn-cta-angpao">
@@ -633,8 +617,7 @@
                                                                                 aria-hidden="true"
                                                                                 class="far fa-paper-plane"> </i>
                                                                     </span>
-                                                                    <span class="elementor-button-text">&nbsp;
-                                                                        Konfirmasi Whatsapp
+                                                                    <span class="elementor-button-text">&nbsp;Konfirmasi Whatsapp
                                                         </div></span>
                                                         </span>
                                                         </a>
@@ -648,17 +631,19 @@
                 </div>
             </div>
         </section>
+        </div>
+    </div>
     </div>
     </div>
     </div>
     </section>
     </section>
     <center>
-        <div class="space40px"></div>
+        <div class="space24px"></div>
         <div data-aos="fade-up" data-aos-easing="linear">
             <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
         </div>
-        <div class="space40px"></div>
+        <div class="space24px"></div>
         <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
             Kami yang berbahagia,
             <br>
@@ -706,7 +691,11 @@
             duration: 800,
         });
     </script>
-
+    <script>
+        function tampil() {
+            $("#div1").fadeToggle();
+        };
+    </script>
 </body>
 
 </html>

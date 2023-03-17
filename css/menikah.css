@@ -525,12 +525,26 @@ body.preloader-site {
 
 .btn-cta-angpao {
   background-color: #b78e8e;
+  font-family: 'Raleway', sans-serif;
   width:  250px;
   height: 35px;
   color: white;
   font-size: 1.2rem;
   border: 2px solid #b18d8d;
   border-radius: 10px;
+  align-items: center;
+  margin: 1rem;
+}
+
+.btn-cta-angpao:hover {
+  color:white;
+  font-family: 'Raleway', sans-serif;
+  background-color: #bf7877;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 2px solid #bf7877;
+  width:  250px;
+  height: 35px;
   align-items: center;
   margin: 1rem;
 }
