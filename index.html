@@ -46,6 +46,12 @@
 </head>
 
 <body>
+    <audio src="/music/Gymnopedie_No._1.ogg" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+    <script type="text/javascript">
+        window.onload=function(){
+        document.getElementById("my_audio").play();
+        }
+    </script>
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
@@ -673,16 +679,12 @@
     </div>
         </div>
     </div>
-        <audio control id="music_1" autobuffer>
-            <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg" loop="loop">
-        </audio>
-    </center>
-    <div class="space24px"></div>
-    </section>
-    <!-- End RSVP Content -->
-    </div>
+</center>
+</section>
+<!-- End RSVP Content -->
+</div>
     <!-- End Main Content -->
-
+    
     <!-- Begin Footer -->
     <div class="footer">
         <div class="container">
@@ -698,7 +700,7 @@
         </div>
     </div>
     <!-- End Footer -->
-
+    
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
@@ -709,16 +711,11 @@
             easing: "ease-out",
             duration: 800,
         });
-    </script>
+        </script>
     <script>
         function tampil() {
             $("#div1").fadeToggle();
         };
-    </script>
-    <script>
-        window.onload = function() {
-        document.getElementById("music_1").play();
-        }
     </script>
 </body>
 
