@@ -673,7 +673,7 @@
     </div>
         </div>
     </div>
-        <audio id="music_1" autoplay autobuffer>
+        <audio control id="music_1" autobuffer>
             <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg" loop="loop">
         </audio>
     </center>
@@ -714,6 +714,11 @@
         function tampil() {
             $("#div1").fadeToggle();
         };
+    </script>
+    <script>
+        window.onload = function() {
+        document.getElementById("music_1").play();
+        }
     </script>
 </body>
 
