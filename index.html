@@ -46,12 +46,12 @@
 </head>
 
 <body>
-    <audio src="/music/Gymnopedie_No._1.ogg" id="my_audio" loop="loop" autoplay="autoplay" muted="false"></audio>
+    <!-- <audio src="/music/Gymnopedie_No._1.ogg" id="my_audio" loop="loop" autoplay="autoplay" muted="false"></audio>
     <script type="text/javascript">
         window.onload=function(){
         document.getElementById("my_audio").play();
         }
-    </script>
+    </script> -->
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
@@ -566,7 +566,8 @@
                                                                 <div class="head-title"></div>
                                                                 <div class="elementor-button-wrapper">
                                                                     <div class="copy-content spancontent"
-                                                                        style="display: none;">Jl. Ombak Gg. Mulia 1 No.2 - Dumai - Riau</div>
+                                                                        style="display: none;">Jl. Ombak Gg. Mulia 1
+                                                                        No.2 - Dumai - Riau</div>
                                                                     <a style="cursor:pointer;" onclick="copyText(this)"
                                                                         data-message="Data berhasil disalin"
                                                                         class="button btn-cta-angpao">
@@ -588,10 +589,12 @@
                                                                 .spancontent {
                                                                     padding-bottom: 20px;
                                                                 }
+
                                                                 .copy-content {
                                                                     color: #6EC1E4;
                                                                     text-align: center;
                                                                 }
+
                                                                 .head-title {
                                                                     color: #6EC1E4;
                                                                     text-align: center;
@@ -676,15 +679,18 @@
                 <i class="fab fa-instagram"></i> @cocohelm
             </a>
         </p>
-    </div>
         </div>
+        </div>
+        </div>
+        <audio controls autoplay autobuffer>
+            <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg">
+        </audio>
+    </center>
+    </section>
+    <!-- End RSVP Content -->
     </div>
-</center>
-</section>
-<!-- End RSVP Content -->
-</div>
     <!-- End Main Content -->
-    
+
     <!-- Begin Footer -->
     <div class="footer">
         <div class="container">
@@ -700,7 +706,7 @@
         </div>
     </div>
     <!-- End Footer -->
-    
+
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/menikah.js"></script>
@@ -711,7 +717,7 @@
             easing: "ease-out",
             duration: 800,
         });
-        </script>
+    </script>
     <script>
         function tampil() {
             $("#div1").fadeToggle();
