@@ -682,9 +682,6 @@
         </div>
         </div>
         </div>
-        <audio controls autoplay autobuffer>
-            <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg">
-        </audio>
     </center>
     </section>
     <!-- End RSVP Content -->
@@ -724,5 +721,12 @@
         };
     </script>
 </body>
-
+<audio id='ntfSound'>
+    <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg">
+</audio>
+<script type="text/javascript">
+    $(document).ready(function() {
+        document.getElementById('ntfSound').play();
+	});
+</script>
 </html>
