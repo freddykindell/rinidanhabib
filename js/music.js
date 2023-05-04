@@ -7,6 +7,6 @@ $(document).ready(function(){
     $(".footer").show();
     $("#ntfSound")[0].play();
     $("#show").hide();
-    $("#home").hide();
+    $("#landing").hide();
     });
 });
