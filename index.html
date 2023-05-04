@@ -43,15 +43,27 @@
 
     <!-- Github Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script src="js/music.js"></script>
 </head>
 
 <body>
-    <!-- <audio src="/music/Gymnopedie_No._1.ogg" id="my_audio" loop="loop" autoplay="autoplay" muted="false"></audio>
-    <script type="text/javascript">
-        window.onload=function(){
-        document.getElementById("my_audio").play();
-        }
-    </script> -->
+    <center>    
+        <div style="padding: 20% 10% 0% 10%" class="header-wrapper" id="home">
+            <section class="hero is-large">
+            <nav class="navbar is-transparent is-hidden-desktop"></nav>
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h1 class="subtitle">Undangan Pernikahan</h1>
+                    <h2 class="title">Rini & Habib</h2>
+                    <button class="button has-tooltip btn-cta" id="show">Buka Undangan</button>
+                </div>
+            </div>
+            </section>
+        </div>
+    </center>
+
+    
+<div id="tampilkan">
     <!-- Begin Preloader -->
     <div class="preloader-wrapper">
         <div class="preloader">
@@ -313,9 +325,10 @@
         <section class="section-light regular-section is-fullheight" id="tentang-sherly-daeng">
             <div class="container">
                 <div class="columns is-multiline">
-                    <div class="column has-text-centered is-12 prolog">
-                        <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">
+                    <div class="column has-text-centered is-12 prolog" data-aos="fade-up" data-aos-easing="linear">
+                        <h1 class="title has-text-centered section-title">
                             Galeri Rini & Habib</h1>
+                        <div data-aos="fade-up" data-aos-easing="linear">
                         <!-- IMAGES -->
                         <img src="image/rini/1.png" style="width:200px;height:200px;">
                         <img src="image/rini/2.png" style="width:200px;height:200px;">
@@ -323,7 +336,6 @@
                         <img src="image/rini/3.png" style="width:404px;height:200px;">
                         <img src="image/rini/4.png" style="width:404px;height:200px;">
                         <!-- IMAGES -->
-                        <div data-aos="fade-up" data-aos-easing="linear">
                         </div>
                         <div class="space40px"></div>
                         <div class="space40px"></div>
@@ -655,6 +667,27 @@
                     </div>
                 </div>
         </section>
+        <center>
+            <div class="space24px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
+            </div>
+            <div class="space24px"></div>
+            <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
+                Kami yang berbahagia,
+                <br>
+                <a class="instagram" href="https://instagram.com/wadever34" target="_blank" alt="Instagram Rini">
+                    <i class="fab fa-instagram"></i> @wadever34
+                </a>
+                &nbsp
+                <a class="instagram" href="https://instagram.com/cocohelm" target="_blank" alt="Instagram Habib">
+                    <i class="fab fa-instagram"></i> @cocohelm
+                </a>
+            </p>
+            </div>
+            </div>
+            </div>
+        </center>
     </div>
     </div>
     </div>
@@ -662,27 +695,7 @@
     </div>
     </section>
     </section>
-    <center>
-        <div class="space24px"></div>
-        <div data-aos="fade-up" data-aos-easing="linear">
-            <img src="image/divider-leaves.png" class="divider has-text-centered" alt="~~~">
-        </div>
-        <div class="space24px"></div>
-        <p class="h2 subtitle" data-aos="fade-up" data-aos-easing="linear">
-            Kami yang berbahagia,
-            <br>
-            <a class="instagram" href="https://instagram.com/wadever34" target="_blank" alt="Instagram Rini">
-                <i class="fab fa-instagram"></i> @wadever34
-            </a>
-            &nbsp
-            <a class="instagram" href="https://instagram.com/cocohelm" target="_blank" alt="Instagram Habib">
-                <i class="fab fa-instagram"></i> @cocohelm
-            </a>
-        </p>
-        </div>
-        </div>
-        </div>
-    </center>
+    
     </section>
     <!-- End RSVP Content -->
     </div>
@@ -702,6 +715,7 @@
             </a>
         </div>
     </div>
+</div> 
     <!-- End Footer -->
 
     <!-- Scripts -->
@@ -721,12 +735,9 @@
         };
     </script>
 </body>
+
 <audio id='ntfSound'>
-    <source src="/music/Gymnopedie_No._1.ogg" type="audio/ogg">
+    <source src="music/Gymnopedie_No._1.ogg" type="audio/ogg">
 </audio>
-<script type="text/javascript">
-    $(document).ready(function() {
-        document.getElementById('ntfSound').play();
-	});
-</script>
+
 </html>
