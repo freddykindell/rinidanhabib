@@ -3,10 +3,13 @@ $(document).ready(function(){
     $(".footer").hide();
     
     $("#show").click(function(){
-    $("#tampilkan").show();
-    $(".footer").show();
-    $("#ntfSound")[0].play();
+    $("#tampilkan").fadeIn();
+    $(".footer").fadeIn();
     $("#show").hide();
     $("#landing").hide();
+    const audio = new Audio("music/Gymnopedie_No._1.ogg" );
+    audio.play();
+    // $("#ntfSound")[0].play();
+    
     });
 });
