@@ -7,7 +7,7 @@ $(document).ready(function(){
     $(".footer").fadeIn();
     $("#show").hide();
     $("#landing").hide();
-    const audio = new Audio("music/Gymnopedie_No._1.ogg");
+    const audio = new Audio("music/music.ogg");
     audio.play();
     // $("#ntfSound")[0].play();
     });
